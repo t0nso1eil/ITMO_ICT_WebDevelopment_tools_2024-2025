@@ -1,0 +1,2045 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../practices/1.1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Lab 1 - Лабораторные работы по предмету Web-программирование</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#no2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Лабораторные работы по предмету Web-программирование" class="md-header__button md-logo" aria-label="Лабораторные работы по предмету Web-программирование" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Лабораторные работы по предмету Web-программирование
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lab 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Лабораторные работы по предмету Web-программирование" class="md-nav__button md-logo" aria-label="Лабораторные работы по предмету Web-программирование" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Лабораторные работы по предмету Web-программирование
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Labs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Labs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lab 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lab 1
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    <span class="md-ellipsis">
+      User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budgetcategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      BudgetCategory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Схемы (Schemas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Схемы (Schemas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apiauthpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модуль аутентификации (api/auth.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модуль аутентификации (api/auth.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-usersme" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /users/me
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-usersuser_idchange-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /users/{user_id}/change-password
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apibudget_categorypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Категории бюджета (api/budget_category.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Категории бюджета (api/budget_category.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-budget-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budget-categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budget-categoriesid" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budget-categories/{id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-budget-categoriesid" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /budget-categories/{id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apibudgetspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Бюджеты (api/budgets.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Бюджеты (api/budgets.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /budgets/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgetsbudget_iddetails" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/{budget_id}/details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apicategoriespy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Категории (api/categories.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Категории (api/categories.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apigoalspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цели (api/goals.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Цели (api/goals.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /goals/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goalsgoal_iddetails" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/{goal_id}/details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Авторизация и Аутентификация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Авторизация и Аутентификация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      config.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash_servicepy" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash_service.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hash_service.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hash_passwordpassword-str-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash_password(password: str) -&gt; str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_passwordplain_password-str-hashed_password-str-bool" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_password(plain_password: str, hashed_password: str) -&gt; bool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jwt_generatorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      jwt_generator.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="jwt_generator.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_access_tokendata-dict-expires_delta-optionaltimedelta-none-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -&gt; str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_access_tokentoken-str-credentials_exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_access_token(token: str, credentials_exception)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Использование в эндпоинтах (auth.py)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Защита эндпоинтов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Practices
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/1.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice 1.1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/1.2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice 1.2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../practices/1.3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practice 1.3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модели данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    <span class="md-ellipsis">
+      User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budgetcategory" class="md-nav__link">
+    <span class="md-ellipsis">
+      BudgetCategory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Схемы (Schemas)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Схемы (Schemas)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transaction_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transaction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budget_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Budget
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#category_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Category
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goal_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Goal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apiauthpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модуль аутентификации (api/auth.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Модуль аутентификации (api/auth.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-register" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /register
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-login" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /login
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-usersme" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /users/me
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-usersuser_idchange-password" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /users/{user_id}/change-password
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apibudget_categorypy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Категории бюджета (api/budget_category.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Категории бюджета (api/budget_category.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get-budget-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budget-categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budget-categoriesid" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budget-categories/{id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-budget-categoriesid" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /budget-categories/{id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apibudgetspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Бюджеты (api/budgets.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Бюджеты (api/budgets.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /budgets/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgets" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-budgetsbudget_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /budgets/{budget_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-budgetsbudget_iddetails" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /budgets/{budget_id}/details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apicategoriespy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Категории (api/categories.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Категории (api/categories.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /categories/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-categoriescategory_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /categories/{category_id}
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apigoalspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цели (api/goals.py)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Цели (api/goals.py)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST /goals/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#put-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-goalsgoal_id" class="md-nav__link">
+    <span class="md-ellipsis">
+      DELETE /goals/{goal_id}
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-goalsgoal_iddetails" class="md-nav__link">
+    <span class="md-ellipsis">
+      GET /goals/{goal_id}/details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Авторизация и Аутентификация
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Авторизация и Аутентификация">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      config.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="config.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hash_servicepy" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash_service.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hash_service.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hash_passwordpassword-str-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      hash_password(password: str) -&gt; str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_passwordplain_password-str-hashed_password-str-bool" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_password(plain_password: str, hashed_password: str) -&gt; bool
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jwt_generatorpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      jwt_generator.py
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="jwt_generator.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_access_tokendata-dict-expires_delta-optionaltimedelta-none-str" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -&gt; str
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_access_tokentoken-str-credentials_exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_access_token(token: str, credentials_exception)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Использование в эндпоинтах (auth.py)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Защита эндпоинтов
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="no2">Документация к Лабораторной работе №2</h1>
+<p><a href="https://rendex85.github.io/WebDevelopmentLabsDocs/lr2/lr2/">Ссылка на задание</a></p>
+<h2 id="_1">Модели данных</h2>
+<p><img alt="DB diagram" src="../finance_db.png" /></p>
+<p>Проект реализует систему управления личными финансами: бюджеты, цели, транзакции и категории. Ниже описаны основные SQLModel-модели:</p>
+<hr />
+<h3 id="user">User</h3>
+<pre><code class="language-python">class User(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>: ID пользователя  </li>
+<li><code>username</code>: уникальное имя  </li>
+<li><code>email</code>: уникальный email  </li>
+<li><code>password_hash</code>: зашифрованный пароль  </li>
+<li><code>created_at</code>: дата регистрации  </li>
+</ul>
+<p>Отношения:
+- <code>transactions</code>: список транзакций<br />
+- <code>budgets</code>: список бюджетов<br />
+- <code>goals</code>: список целей  </p>
+<hr />
+<h3 id="transaction">Transaction</h3>
+<pre><code class="language-python">class Transaction(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>: ID транзакции  </li>
+<li><code>user_id</code>: внешний ключ на пользователя  </li>
+<li><code>category_id</code>: категория (расход/доход)  </li>
+<li><code>amount</code>: сумма  </li>
+<li><code>type</code>: <code>income | expense</code>  </li>
+<li><code>linked_object_id</code>: связь с бюджетом или целью  </li>
+<li><code>linked_object_type</code>: <code>goal | budget</code>  </li>
+<li><code>description</code>, <code>date</code></li>
+</ul>
+<p>Отношения:
+- <code>user</code>, <code>category</code></p>
+<hr />
+<h3 id="budget">Budget</h3>
+<pre><code class="language-python">class Budget(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>, <code>user_id</code>, <code>month</code>  </li>
+<li><code>current_amount</code>: текущая сумма бюджета  </li>
+<li><code>created_at</code>: дата создания</li>
+</ul>
+<p>Отношения:
+- <code>user</code>, <code>categories</code> (через <code>BudgetCategory</code>)</p>
+<hr />
+<h3 id="budgetcategory">BudgetCategory</h3>
+<pre><code class="language-python">class BudgetCategory(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>, <code>budget_id</code>, <code>category_id</code>  </li>
+<li><code>limit_amount</code>: лимит трат по категории</li>
+</ul>
+<p>Отношения:
+- <code>budget</code>, <code>category</code></p>
+<hr />
+<h3 id="category">Category</h3>
+<pre><code class="language-python">class Category(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>, <code>name</code>  </li>
+<li><code>is_income</code>: флаг "доход" или "расход"</li>
+</ul>
+<p>Отношения:
+- <code>transactions</code>, <code>budget_categories</code></p>
+<hr />
+<h3 id="goal">Goal</h3>
+<pre><code class="language-python">class Goal(SQLModel, table=True):
+</code></pre>
+<ul>
+<li><code>id</code>, <code>user_id</code>, <code>title</code>  </li>
+<li><code>target_amount</code>: цель накоплений  </li>
+<li><code>current_amount</code>: уже накоплено  </li>
+<li><code>due_date</code>: крайняя дата  </li>
+<li><code>created_at</code>: дата создания</li>
+</ul>
+<p>Отношения:
+- <code>user</code></p>
+<hr />
+<h2 id="schemas">Схемы (Schemas)</h2>
+<p>Схемы используются для сериализации / валидации данных через <strong>Pydantic</strong> (встроено в SQLModel).</p>
+<hr />
+<h3 id="user_1">User</h3>
+<ul>
+<li><code>UserBase</code> — базовая: <code>username</code>, <code>email</code>  </li>
+<li><code>UserCreate</code> — регистрация + <code>password</code>  </li>
+<li><code>UserRead</code> — <code>id</code>, <code>created_at</code>  </li>
+<li><code>UserUpdate</code> — изменение пользователя  </li>
+<li><code>UserLogin</code> — для логина</li>
+</ul>
+<hr />
+<h3 id="transaction_1">Transaction</h3>
+<ul>
+<li><code>TransactionBase</code> — все поля транзакции  </li>
+<li><code>TransactionCreate</code> — создание  </li>
+<li><code>TransactionRead</code> — чтение  </li>
+<li><code>TransactionUpdate</code> — частичное обновление</li>
+</ul>
+<hr />
+<h3 id="budget_1">Budget</h3>
+<ul>
+<li><code>BudgetBase</code> — месяц  </li>
+<li><code>BudgetCreate</code> — создание с категориями  </li>
+<li><code>BudgetRead</code> — подробный вывод с транзакциями и лимитами  </li>
+<li><code>BudgetUpdate</code> — изменение бюджета  </li>
+<li><code>BudgetCategoryRead</code> — категория + лимит + потрачено  </li>
+<li><code>BudgetCategoryUpdate</code> — изменение лимита</li>
+</ul>
+<hr />
+<h3 id="category_1">Category</h3>
+<ul>
+<li><code>CategoryBase</code> — <code>name</code>, <code>is_income</code>  </li>
+<li><code>CategoryCreate</code>, <code>CategoryRead</code>, <code>CategoryUpdate</code></li>
+</ul>
+<hr />
+<h3 id="goal_1">Goal</h3>
+<ul>
+<li><code>GoalBase</code> — базовая цель  </li>
+<li><code>GoalCreate</code>, <code>GoalRead</code>, <code>GoalUpdate</code>  </li>
+<li><code>TransactionRead</code> — используется для связи транзакций с целями</li>
+</ul>
+<hr />
+<h2 id="api">API</h2>
+<p><img alt="Swagger UI" src="../api_lab.png" /></p>
+<h3 id="apiauthpy"><strong>Модуль аутентификации (<code>api/auth.py</code>)</strong></h3>
+<h4 id="post-register"><code>POST /register</code></h4>
+<p>Регистрация нового пользователя.</p>
+<ul>
+<li><strong>Request body</strong>: <code>UserCreate</code> (username, email, password)</li>
+<li><strong>Response</strong>: <code>UserRead</code></li>
+<li><strong>Ошибки</strong>:</li>
+<li>400: Email/Username уже зарегистрирован</li>
+</ul>
+<hr />
+<h4 id="post-login"><code>POST /login</code></h4>
+<p>Аутентификация пользователя и выдача токена доступа.</p>
+<ul>
+<li><strong>Request body</strong>: <code>UserLogin</code> (username, password)</li>
+<li><strong>Response</strong>:
+  <code>json
+  {
+    "access_token": "&lt;JWT&gt;",
+    "token_type": "bearer"
+  }</code></li>
+<li><strong>Ошибки</strong>:</li>
+<li>401: Неверные учетные данные</li>
+</ul>
+<hr />
+<h4 id="get-usersme"><code>GET /users/me</code></h4>
+<p>Получение текущего авторизованного пользователя.</p>
+<ul>
+<li><strong>Response</strong>: <code>UserRead</code></li>
+<li><strong>Аутентификация</strong>: Bearer Token</li>
+</ul>
+<hr />
+<h4 id="put-usersuser_idchange-password"><code>PUT /users/{user_id}/change-password</code></h4>
+<p>Изменение пароля пользователя.</p>
+<ul>
+<li><strong>Query param</strong>: <code>new_password</code></li>
+<li><strong>Response</strong>:
+  <code>json
+  { "msg": "Password updated successfully" }</code></li>
+<li><strong>Ошибки</strong>:</li>
+<li>404: Пользователь не найден</li>
+</ul>
+<hr />
+<h3 id="apibudget_categorypy"><strong>Категории бюджета (<code>api/budget_category.py</code>)</strong></h3>
+<h4 id="get-budget-categories"><code>GET /budget-categories/</code></h4>
+<p>Получение списка всех бюджетных категорий.</p>
+<ul>
+<li><strong>Response</strong>: <code>List[BudgetCategoryRead]</code></li>
+</ul>
+<hr />
+<h4 id="get-budget-categoriesid"><code>GET /budget-categories/{id}</code></h4>
+<p>Получение одной категории по ID.</p>
+<ul>
+<li><strong>Response</strong>: <code>BudgetCategoryRead</code></li>
+<li><strong>Ошибки</strong>: 404, если не найдено</li>
+</ul>
+<hr />
+<h4 id="delete-budget-categoriesid"><code>DELETE /budget-categories/{id}</code></h4>
+<p>Удаление категории бюджета.</p>
+<ul>
+<li><strong>Response</strong>:
+  <code>json
+  { "ok": true }</code></li>
+</ul>
+<hr />
+<h3 id="apibudgetspy"><strong>Бюджеты (<code>api/budgets.py</code>)</strong></h3>
+<h4 id="post-budgets"><code>POST /budgets/</code></h4>
+<p>Создание бюджета на месяц с выбранными категориями.</p>
+<ul>
+<li><strong>Request body</strong>: <code>BudgetCreate</code> (month, categories)</li>
+<li><strong>Response</strong>: <code>BudgetRead</code></li>
+<li><strong>Аутентификация</strong>: Bearer Token</li>
+</ul>
+<hr />
+<h4 id="get-budgetsbudget_id"><code>GET /budgets/{budget_id}</code></h4>
+<p>Получение информации о конкретном бюджете.</p>
+<ul>
+<li><strong>Response</strong>: <code>BudgetRead</code> с категориями и потраченными суммами</li>
+</ul>
+<hr />
+<h4 id="get-budgets"><code>GET /budgets/</code></h4>
+<p>Получение всех бюджетов со статистикой по категориям.</p>
+<ul>
+<li><strong>Response</strong>: <code>List[BudgetRead]</code></li>
+</ul>
+<hr />
+<h4 id="put-budgetsbudget_id"><code>PUT /budgets/{budget_id}</code></h4>
+<p>Обновление бюджета: месяц и категории.</p>
+<ul>
+<li><strong>Request body</strong>: <code>BudgetUpdate</code></li>
+<li><strong>Response</strong>: <code>BudgetRead</code></li>
+<li><strong>Ошибки</strong>:</li>
+<li>404: Бюджет не найден или доступ запрещён</li>
+</ul>
+<hr />
+<h4 id="delete-budgetsbudget_id"><code>DELETE /budgets/{budget_id}</code></h4>
+<p>Удаление бюджета.</p>
+<ul>
+<li><strong>Response</strong>:
+  <code>json
+  { "ok": true }</code></li>
+</ul>
+<hr />
+<h4 id="get-budgetsbudget_iddetails"><code>GET /budgets/{budget_id}/details</code></h4>
+<p>Подробности по бюджету: категории и транзакции.</p>
+<ul>
+<li><strong>Response</strong>: <code>BudgetRead</code> + список транзакций</li>
+</ul>
+<hr />
+<h3 id="apicategoriespy"><strong>Категории (<code>api/categories.py</code>)</strong></h3>
+<h4 id="post-categories"><code>POST /categories/</code></h4>
+<p>Создание новой категории.</p>
+<ul>
+<li><strong>Request body</strong>: <code>CategoryCreate</code></li>
+<li><strong>Response</strong>: <code>CategoryRead</code></li>
+</ul>
+<hr />
+<h4 id="get-categories"><code>GET /categories/</code></h4>
+<p>Получение всех категорий.</p>
+<ul>
+<li><strong>Response</strong>: <code>List[CategoryRead]</code></li>
+</ul>
+<hr />
+<h4 id="get-categoriescategory_id"><code>GET /categories/{category_id}</code></h4>
+<p>Получение одной категории.</p>
+<ul>
+<li><strong>Response</strong>: <code>CategoryRead</code></li>
+<li><strong>Ошибки</strong>: 404, если не найдено</li>
+</ul>
+<hr />
+<h4 id="put-categoriescategory_id"><code>PUT /categories/{category_id}</code></h4>
+<p>Обновление категории.</p>
+<ul>
+<li><strong>Request body</strong>: <code>CategoryUpdate</code></li>
+<li><strong>Response</strong>: <code>CategoryRead</code></li>
+</ul>
+<hr />
+<h4 id="delete-categoriescategory_id"><code>DELETE /categories/{category_id}</code></h4>
+<p>Удаление категории.</p>
+<ul>
+<li><strong>Response</strong>:
+  <code>json
+  { "ok": true }</code></li>
+</ul>
+<hr />
+<h3 id="apigoalspy"><strong>Цели (<code>api/goals.py</code>)</strong></h3>
+<h4 id="post-goals"><code>POST /goals/</code></h4>
+<p>Создание финансовой цели.</p>
+<ul>
+<li><strong>Request body</strong>: <code>GoalCreate</code></li>
+<li><strong>Response</strong>: <code>GoalRead</code></li>
+<li><strong>Аутентификация</strong>: Bearer Token</li>
+</ul>
+<hr />
+<h4 id="get-goals"><code>GET /goals/</code></h4>
+<p>Получение всех целей.</p>
+<ul>
+<li><strong>Response</strong>: <code>List[GoalRead]</code></li>
+</ul>
+<hr />
+<h4 id="get-goalsgoal_id"><code>GET /goals/{goal_id}</code></h4>
+<p>Получение цели по ID.</p>
+<ul>
+<li><strong>Response</strong>: <code>GoalRead</code></li>
+<li><strong>Ошибки</strong>: 404, если не найдено</li>
+</ul>
+<hr />
+<h4 id="put-goalsgoal_id"><code>PUT /goals/{goal_id}</code></h4>
+<p>Обновление цели.</p>
+<ul>
+<li><strong>Request body</strong>: <code>GoalUpdate</code></li>
+<li><strong>Response</strong>: <code>GoalRead</code></li>
+<li><strong>Ошибки</strong>:</li>
+<li>404: Не найдено</li>
+<li>403: Нет доступа к изменению</li>
+</ul>
+<hr />
+<h4 id="delete-goalsgoal_id"><code>DELETE /goals/{goal_id}</code></h4>
+<p>Удаление цели.</p>
+<ul>
+<li><strong>Response</strong>:
+  <code>json
+  { "ok": true }</code></li>
+</ul>
+<hr />
+<h4 id="get-goalsgoal_iddetails"><code>GET /goals/{goal_id}/details</code></h4>
+<p>Детальная информация о цели (включая транзакции).</p>
+<ul>
+<li><strong>Response</strong>:
+  <code>json
+  {
+    "id": ...,
+    "user_id": ...,
+    "title": "...",
+    "target_amount": ...,
+    "created_at": "...",
+    "due_date": "...",
+    "transactions": [...]
+  }</code></li>
+</ul>
+<hr />
+<p>Вот описание документации для компонентов <strong>аутентификации и авторизации</strong> в твоём проекте, оформленное в стиле FastAPI документации:</p>
+<hr />
+<h2 id="_2">Авторизация и Аутентификация</h2>
+<p>Модуль аутентификации и авторизации реализует регистрацию пользователей, вход, проверку токенов и защиту эндпоинтов с помощью JWT.</p>
+<hr />
+<h3 id="configpy"><code>config.py</code></h3>
+<h4 id="settings"><code>Settings</code></h4>
+<p>Класс конфигурации для авторизации. Настройки могут быть переопределены через переменные окружения.</p>
+<ul>
+<li><code>SECRET_KEY</code>: Секретный ключ для подписи токенов (по умолчанию <code>"richardrichardrichard"</code>).</li>
+<li><code>ALGORITHM</code>: Алгоритм для JWT (по умолчанию <code>"HS256"</code>).</li>
+<li><code>ACCESS_TOKEN_EXPIRE_MINUTES</code>: Время жизни токена доступа в минутах (по умолчанию <code>30</code>).</li>
+</ul>
+<hr />
+<h3 id="hash_servicepy"><code>hash_service.py</code></h3>
+<h4 id="hash_passwordpassword-str-str"><code>hash_password(password: str) -&gt; str</code></h4>
+<p>Хэширует переданный пароль с использованием bcrypt.</p>
+<h4 id="verify_passwordplain_password-str-hashed_password-str-bool"><code>verify_password(plain_password: str, hashed_password: str) -&gt; bool</code></h4>
+<p>Проверяет, соответствует ли простой пароль хэшу.</p>
+<hr />
+<h3 id="jwt_generatorpy"><code>jwt_generator.py</code></h3>
+<h4 id="create_access_tokendata-dict-expires_delta-optionaltimedelta-none-str"><code>create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -&gt; str</code></h4>
+<p>Создаёт JWT-токен на основе переданных данных и срока действия.</p>
+<ul>
+<li><code>data</code>: Словарь с полезной нагрузкой токена (должен включать как минимум <code>sub</code> и <code>user_id</code>).</li>
+<li><code>expires_delta</code>: Необязательный параметр — продолжительность действия токена. Если не задан, используется значение по умолчанию из <code>config.py</code>.</li>
+</ul>
+<p>Возвращает строку JWT.</p>
+<h4 id="verify_access_tokentoken-str-credentials_exception"><code>verify_access_token(token: str, credentials_exception)</code></h4>
+<p>Проверяет валидность JWT-токена. При неуспехе выбрасывает <code>credentials_exception</code>.</p>
+<hr />
+<h3 id="authpy">Использование в эндпоинтах (<code>auth.py</code>)</h3>
+<ul>
+<li>
+<p><strong>Регистрация (<code>POST /register</code>)</strong><br />
+  Создаёт нового пользователя. Проверяет уникальность <code>email</code> и <code>username</code>. Хэширует пароль.</p>
+</li>
+<li>
+<p><strong>Логин (<code>POST /login</code>)</strong><br />
+  Проверяет учетные данные и возвращает <code>access_token</code> и <code>token_type</code>.</p>
+</li>
+<li>
+<p><strong>Получение текущего пользователя (<code>GET /users/me</code>)</strong><br />
+  Использует токен в заголовке <code>Authorization: Bearer &lt;token&gt;</code> для извлечения информации о пользователе.</p>
+</li>
+<li>
+<p><strong>Смена пароля (<code>PUT /users/{user_id}/change-password</code>)</strong><br />
+  Позволяет изменить пароль пользователя, указав новый.</p>
+</li>
+</ul>
+<hr />
+<h3 id="_3">Защита эндпоинтов</h3>
+<p>Используется зависимость:</p>
+<pre><code class="language-python">oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;login&quot;)
+</code></pre>
+<p>И функция:</p>
+<pre><code class="language-python">def get_current_user(...)
+</code></pre>
+<p>которая:
+- декодирует токен,
+- проверяет наличие <code>username</code> и <code>user_id</code>,
+- возвращает пользователя из базы данных.</p>
+<p>Пример использования:</p>
+<pre><code class="language-python">@router.get(&quot;/users/me&quot;, response_model=UserRead)
+async def read_users_me(current_user: User = Depends(get_current_user)):
+    return current_user
+</code></pre>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
